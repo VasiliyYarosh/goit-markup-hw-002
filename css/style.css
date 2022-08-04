@@ -7,6 +7,10 @@ button {
     cursor: pointer;
 }
 
+:root {
+    --globalActiveColor: rgb(33, 150, 243);
+}
+
 /*--------------------------------------------------------------HEADER-------------------------------------------------------------*/
 .header {
     background-color: rgb(79, 79, 109);
@@ -20,7 +24,7 @@ header a {
 
 header a:hover,
 header a:focus {
-    color: rgb(33, 150, 243);
+    color: var(--globalActiveColor);
 }
 
 .header-logo {
@@ -30,11 +34,11 @@ header a:focus {
     line-height: 1.19;
     text-decoration: none;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--globalActiveColor);
 }
 
 .logo-web {
-    color: rgb(33, 150, 243);
+    color: var(--globalActiveColor);
 }
 
 .logo-studio {
@@ -87,21 +91,12 @@ header a:focus {
 }
 
 .hero-btn {
-    width: 216px;
-    height: 50px;
-    left: 692px;
-    top: 430px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    margin: 0 auto;
-    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
 }
 
-.hero-btn:hover {
-    background-color: rgb(33, 150, 243);
-    color: #fff;
-}
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -172,18 +167,9 @@ header a:focus {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    /* identical to box height, or 162% */
-
     text-align: center;
     letter-spacing: 0.03em;
-
     color: #212121;
-    width: 125px;
-    height: 38px;
-    left: 593px;
-    top: 174px;
-    background: #F5F4FA;
-    border-radius: 4px;
 }
 
 .style-btn:hover {
@@ -192,19 +178,9 @@ header a:focus {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    /* identical to box height, or 162% */
-
     text-align: center;
     letter-spacing: 0.03em;
-
     color: #FFFFFF;
-    width: 73px;
-    height: 38px;
-    left: 512px;
-    top: 174px;
-    background: #2196F3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
 }
 
 .orient-btn {
@@ -228,7 +204,13 @@ header a:focus {
     color: #757575;
 }
 
+.style-ithem-portf {
+    list-style-type: none;
+}
 
+.style-ithem-fspg {
+    list-style-type: none;
+}
 
 /*--------------------------------------------------------FOOTER---------------------------------------------------------------------*/
 
@@ -242,7 +224,7 @@ header a:focus {
 
 .footer a:hover,
 .footer a:focus {
-    color: rgb(33, 150, 243);
+    color: var(--globalActiveColor);
 }
 
 .address-map {
@@ -257,4 +239,13 @@ header a:focus {
 
 .style-footer {
     list-style-type: none;
+}
+
+.footer-href {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
